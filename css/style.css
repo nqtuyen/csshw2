@@ -47,14 +47,17 @@ body{
   }
 
   .grid-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 10px 50px;
+    align-content: center;
+    margin: 50px;
   }
 
   .grid-container > img {
-    width: 45%;
-    padding: 10px 0;
+    width: 100%;
+    align-content: center;
   }
 
   .flex-container {
